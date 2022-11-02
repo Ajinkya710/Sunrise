@@ -1,0 +1,31 @@
+.updates {
+    background-color: #817d7d27;
+    height: auto;
+}
+#updatesheader {
+    filter: brightness(30%);
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .updates h1 {
+    position: absolute;
+    top: 7%;
+    left: 45%;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  #logo_link{
+    position: absolute;
+    top: 15px;
+    left: 3%;
+    z-index: 3;
+  }
+
+  .social_layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
