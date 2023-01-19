@@ -1,20 +1,24 @@
-import React from 'react';
+import React from 'react';  
 import ReactDOM from 'react-dom';
+// import PrivateRoute from './components/PrivateRoute'
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Getinvolved from './components/Getinvolved'
 import Updates from './components/Updates'
 import Chiefinvestigators from './components/ChiefInvestigator'
 import Login from './components/LoginForm'
+import Publications from './components/Publications'
 import ReactGA from 'react-ga4';
+import MemberAccess from './components/MemberSection';
+import SignUp from './components/Signup';
+import { AuthContextProvider } from './context/AuthContext';
 ReactGA.initialize('G-TNL0HZPW9P');
 
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <Router>
     <React.StrictMode>
-      
+    <AuthContextProvider>
       <Switch>
         <Route path="/getinvolved">
           <Getinvolved/>
@@ -28,18 +32,24 @@ ReactDOM.render(
         <Route path="/login">
           <Login/>
         </Route>
+        <Route path="/signup">
+          <SignUp/>
+        </Route>
+        {/* <Route path="/memberaccess" element={<PrivateRoute />}>
+            <Route path="" element={<MemberAccess />} />
+          </Route> */}
+        <Route path="/memberaccess">
+          <MemberAccess/>
+        </Route>
+        <Route path="/publications">
+          <Publications />
+        </Route>
         <Route path="/">
           <App />
         </Route>
-        
       </Switch>
+      </AuthContextProvider>
     </React.StrictMode>
-    
-  </Router>,
-  document.getElementById('root')
+  </Router>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

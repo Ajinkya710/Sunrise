@@ -1,9 +1,12 @@
 import React , { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/sunrise-logo.png';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import headerimg from '../images/CI_Images/CI_header.jpg';
 import './ChiefInvestigators.css';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 import {
   MDBCard,
   MDBCardImage,
@@ -34,7 +37,7 @@ let ci_data = [
       ci_country: 'Australia',
       ci_flag: flags['au.png'],
       ci_name: 'Snr Prof. Tony Okely',
-      ci_university: 'ci_university Of Wollongong',
+      ci_university: 'University Of Wollongong',
       ci_email: 'tokely@uow.edu.au',
       ci_image: ci_images['Tony-Okely_opt.jpg']
     },
@@ -50,7 +53,7 @@ let ci_data = [
       ci_country: 'Brazil',
       ci_flag: flags['br.png'],
       ci_name: 'Alex Antonio Florindo',
-      ci_university: 'ci_university of Sao Paulo, Brazil',
+      ci_university: 'University of Sao Paulo, Brazil',
       ci_email: 'aflorind@usp.br',
       ci_image: ci_images['Alex Antonio Florindo Brazil.jpg']
     },
@@ -58,8 +61,8 @@ let ci_data = [
       ci_country: 'Botswana',
       ci_flag: flags['bw.png'],
       ci_name: 'Comfort J. Mokgoth',
-      ci_university: 'ci_university of Botswana',
-      ci_email: 'tokely@uow.edu.au',
+      ci_university: 'University of Botswana',
+      ci_email: 'MOKGOTHU@UB.AC.BW',
       ci_image: ci_images['NoPhoto.jpg']
     },
     { 
@@ -90,7 +93,7 @@ let ci_data = [
       ci_country: 'Ethiopia',
       ci_flag: flags['et.png'],
       ci_name: 'Chalchisa Abdeta',
-      ci_university: 'HI Ethiopia and ci_university of Wollongong',
+      ci_university: 'HI Ethiopia and University of Wollongong',
       ci_email: 'caaliphysio@gmail.com',
       ci_image: ci_images['Chalchisa Abdeta Tugu Ethiopia.jpg']
     },
@@ -98,7 +101,7 @@ let ci_data = [
       ci_country: 'Fiji',
       ci_flag: flags['fg.png'],
       ci_name: 'Pragya Singh',
-      ci_university: 'Fiji National ci_university, Fiji',
+      ci_university: 'Fiji National University, Fiji',
       ci_email: 'pragya.singh@fnu.ac.fj',
       ci_image: ci_images['Pragya Singh Fiji.jpg']
     },
@@ -114,7 +117,7 @@ let ci_data = [
       ci_country: 'Hong Kong',
       ci_flag: flags['hk.png'],
       ci_name: 'Prof. Amy Ha',
-      ci_university: 'The Chinese ci_university of Hong Kong',
+      ci_university: 'The Chinese University of Hong Kong',
       ci_email: 'sauchingha@cuhk.edu.hk',
       ci_image: ci_images['NoPhoto.jpg']
     },
@@ -138,7 +141,7 @@ let ci_data = [
       ci_country: 'Iran',
       ci_flag: flags['ir.png'],
       ci_name: 'Najmeh Hamzavi Zarghani',
-      ci_university: 'Tarbiat Modares ci_university, Iran',
+      ci_university: 'Tarbiat Modares University, Iran',
       ci_email: 'nadjmeh.hamzavi5@yahoo.com',
       ci_image: ci_images['Najmeh Hamzavi Zarghani _ Iran.jpg']
     },
@@ -146,7 +149,7 @@ let ci_data = [
       ci_country: 'Japan',
       ci_flag: flags['jp.png'],
       ci_name: 'Chiaki Tanaka',
-      ci_university: 'Tokyo Kasei Gakuin ci_university, Japan',
+      ci_university: 'Tokyo Kasei Gakuin University, Japan',
       ci_email: 'c.tanaka@kasei-gakuin.ac.jp',
       ci_image: ci_images['Chiaki Tanaka Japan.jpg']
     },
@@ -210,7 +213,7 @@ let ci_data = [
       ci_country: 'Nigeria',
       ci_flag: flags['ng.png'],
       ci_name: 'Aoko Oluwayomi',
-      ci_university: 'ci_university of Lagos, Nigeria',
+      ci_university: 'University of Lagos, Nigeria',
       ci_email: 'yomiaoko@gmail.com',
       ci_image: ci_images['Aoko Oluwayomi Nigeria.jpg']
     },
@@ -242,7 +245,7 @@ let ci_data = [
       ci_country: 'Philippines',
       ci_flag: flags['ph.png'],
       ci_name: 'Marites Tiongco',
-      ci_university: 'De La Salle ci_university, Philippines',
+      ci_university: 'De La Salle University, Philippines',
       ci_email: 'marites.tiongco@dlsu.edu.ph;',
       ci_image: ci_images['Marites Tiongco Philippines.png']
     },
@@ -258,7 +261,7 @@ let ci_data = [
       ci_country: 'Scotland',
       ci_flag: flags['scl.png'],
       ci_name: 'John Reilly',
-      ci_university: 'ci_university of Strathclyde, Scotland',
+      ci_university: 'University of Strathclyde, Scotland',
       ci_email: 'john.j.reilly@strath.ac.uk',
       ci_image: ci_images['John Reilly Scotland.jpg']
     },
@@ -290,7 +293,7 @@ let ci_data = [
       ci_country: 'Spain',
       ci_flag: flags['sp.png'],
       ci_name: 'Borja del Pozo Cruz',
-      ci_university: 'Australian Catholic ci_university, Australia',
+      ci_university: 'Australian Catholic University, Australia',
       ci_email: 'Borja.delPozoCruz@acu.edu.au',
       ci_image: ci_images['Borja del Pozo-Cruz Spain.jpg']
     },
@@ -298,7 +301,7 @@ let ci_data = [
       ci_country: 'Srilanka',
       ci_flag: flags['sr.png'],
       ci_name: 'Pujitha Wickramasinghe',
-      ci_university: 'ci_university of Colombo and Lady Ridgeway Hospital, Sri Lanka',
+      ci_university: 'University of Colombo and Lady Ridgeway Hospital, Sri Lanka',
       ci_email: 'pujithaw@yahoo.com',
       ci_image: ci_images['Pujitha Wickramasinghe Sri Lanka.jpg']
     },
@@ -306,7 +309,7 @@ let ci_data = [
       ci_country: 'Sweden',
       ci_flag: flags['sw.png'],
       ci_name: 'Marie Löf',
-      ci_university: 'Linköping ci_university and Karolinska Institutet, Sweden',
+      ci_university: 'Linköping University and Karolinska Institutet, Sweden',
       ci_email: 'marie.lof@ki.se',
       ci_image: ci_images['Marie Löf Sweden.jpg']
     },
@@ -322,7 +325,7 @@ let ci_data = [
       ci_country: 'Thailand',
       ci_flag: flags['th.png'],
       ci_name: 'Dyah Anantalia Widyastari',
-      ci_university: 'Institute for Population and Social Research, Mahidol ci_university',
+      ci_university: 'Institute for Population and Social Research, Mahidol University',
       ci_email: 'dyah.anantalia@gmail.com',
       ci_image: ci_images['Dyah Anantalia Widyastari-Thailand.jpg']
     },
@@ -330,7 +333,7 @@ let ci_data = [
       ci_country: 'Thailand',
       ci_flag: flags['th.png'],
       ci_name: 'PIYAWAT KATEWONGSA',
-      ci_university: 'Institute for Population and Social Research, Mahidol ci_university.',
+      ci_university: 'Institute for Population and Social Research, Mahidol University.',
       ci_email: '',
       ci_image: ci_images['Piyawat Katewongsa_Thailand.jpg']
     },
@@ -338,7 +341,7 @@ let ci_data = [
       ci_country: 'United Arab Emirates',
       ci_flag: flags['uae.png'],
       ci_name: 'Boštjan Gomiscek',
-      ci_university: 'ci_university of Wollongong Dubai',
+      ci_university: 'University of Wollongong Dubai',
       ci_email: 'BostjanGomiscek@uowdubai.ac.ae',
       ci_image: ci_images['NoPhoto.jpg']
     },
@@ -346,7 +349,7 @@ let ci_data = [
       ci_country: 'United States of America',
       ci_flag: flags['usa.png'],
       ci_name: 'Kip Webster (Augusta)',
-      ci_university: 'Augusta ci_university, USA',
+      ci_university: 'Augusta University, USA',
       ci_email: 'ewebster@augusta.edu',
       ci_image: ci_images['Kip Webster USA Augusta.jpg']
     },
@@ -362,7 +365,7 @@ let ci_data = [
       ci_country: 'Vietnam',
       ci_flag: flags['vt.png'],
       ci_name: 'Tang Kim Hong',
-      ci_university: 'Pham Ngoc Thach ci_university of Medicine, Vietnam',
+      ci_university: 'Pham Ngoc Thach University of Medicine, Vietnam',
       ci_email: 'hong.tang@pnt.edu.vn',
       ci_image: ci_images['Hong K Tang Vietnam.jpg']
     },
@@ -370,7 +373,7 @@ let ci_data = [
       ci_country: 'Zimbabwe',
       ci_flag: flags['zw.png'],
       ci_name: 'Nyaradzai Dangarembizi Munambah',
-      ci_university: 'ci_university of Zimbabwe',
+      ci_university: 'University of Zimbabwe',
       ci_email: 'nyaradzaidangarembizi@yahoo.co.uk',
       ci_image: ci_images['Nyarie Dangarembizi Zimbabwe.jpg']
     },
@@ -382,11 +385,28 @@ const ChiefInvestigator = () => {
  }, []); 
     return (
       <div className="ci">
-        <Link to="/">
-          <img id='logo_link' src={logo} height="120px" width="330px" alt="Home" />
-        </Link>
+        <div className='headernav' style={{justifyContent:'space-between'}}>
+          <div>
+            <Link to="/">
+              <img id='logo' src={logo} height="120px" width="330px" alt="Sunrise" />
+            </Link>
+          </div>
+          <div>
+            <h1 style={{color:'#fff'}}>Chief Investigators</h1>
+          </div>
+          <div>
+            <Link href="https://www.youtube.com/channel/UCUgmfAGHO1qW7HV73vDVSLw" target="_blank">
+              <YouTubeIcon style={{ color: 'rgb(233, 49, 49)', height: '50px', width: '80px' }} />
+            </Link>
+            <Link href="https://twitter.com/StudySunrise" target="_blank">
+              <TwitterIcon style={{ color: 'rgb(49, 168, 232)', height: '50px', width: '80px' }} />
+            </Link>
+            <Link href="https://www.instagram.com/_sunrise.study/" target="_blank">
+              <InstagramIcon style={{ color: 'rgb(243, 119, 42)', height: '50px', width: '80px' }} />
+            </Link>
+          </div>
+        </div>
         <img id='headerimg' src={headerimg} alt="headerimg" />
-        <h1>Chief Investigators</h1>
         <div className='ci_cards'>
             {ci_data.map((item) => {
                 return (
@@ -400,19 +420,19 @@ const ChiefInvestigator = () => {
                                 alt='{}'
                                 position='top'
                             /><br/><br/>
-                            <MDBCardImage
+                            <MDBCardImage style={{ objectFit:'cover'}}
                                 src={item.ci_image}
                                 alt='{}'
                                 position='top'
                             />
                             <MDBCardBody>
                                 <MDBCardTitle style={{padding: '10px', fontSize:'17px'}}>{item.ci_name}</MDBCardTitle>
-                                    <MDBCardText style={{paddingLeft: '10px', fontSize:'17px', color:'#f38981'}}>
-                                    <em>{item.ci_university}</em>
+                                    <MDBCardText  style={{paddingLeft: '10px',paddingRight: '10px', fontSize:'17px', color:'#f38981'}}>
+                                    <em><strong>{item.ci_university}</strong></em>
                                     </MDBCardText>
                             </MDBCardBody>
                             <MDBCardFooter>
-                                <MDBCardText style={{fontSize:'17px',color:'#f38981'}}><br/>
+                                <MDBCardText style={{fontSize:'15px',color:'#f38981'}}><br/>
                                 <em>{item.ci_email}</em>
                                 </MDBCardText>
                             </MDBCardFooter>

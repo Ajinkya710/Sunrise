@@ -47,13 +47,13 @@ const SubscribeForm = ({ status, message, onValidated  }) => {
             ref={node => (f_name = node)}
             type="text"
             placeholder="John"
-            style={{ height:'40px', width:'200px', fontSize:'15px', borderRadius:'5px', borderStyle:'none', marginBottom:'3px'}}
+            style={{ height:'40px', width:'200px', fontSize:'15px', borderRadius:'5px', borderStyle:'none', marginBottom:'3px', paddingLeft: '10px'}}
         />      
         <input
             ref={node => (l_name = node)}
             type="text"
             placeholder="Smith"
-            style={{ height:'40px', width:'200px', fontSize:'15px', borderRadius:'5px', borderStyle:'none', marginBottom:'3px'}}
+            style={{ height:'40px', width:'200px', fontSize:'15px', borderRadius:'5px', borderStyle:'none', marginBottom:'3px', paddingLeft: '10px'}}
         /><br/>
         </div>
         <div className='name_label'>
@@ -65,14 +65,14 @@ const SubscribeForm = ({ status, message, onValidated  }) => {
             ref={node => (email = node)}
             type="email"
             placeholder="email@gmail.com"
-            style={{ height:'40px', width:'420px', fontSize:'15px', borderRadius:'5px', borderStyle:'none'}}
+            style={{ height:'40px', width:'420px', fontSize:'15px', borderRadius:'5px', borderStyle:'none', paddingLeft: '10px'}}
         /><br/>
         <button style={{marginTop:'20px', padding:'10px',fontSize:'15px', marginLeft:'160px', borderRadius:'5px', borderStyle:'none'}} onClick={submit}>Submit</button>
         </div>
         </div>
         <div className='f_image'>
             <MailIcon style={{color:'#f38981', marginLeft:'150px', height:'50px', width:'80px'}}/><br/><br/>
-            <p>Subscribe to our newsletter</p><br/>
+            <p>Subscribe to our newsletter</p><br/><br/>
 			<div className='footer-social'>
 				<Link href="https://www.youtube.com/channel/UCUgmfAGHO1qW7HV73vDVSLw" target="_blank">
 					<YouTubeIcon style={{color:'rgb(233, 49, 49)', marginLeft:'100px', height:'50px', width:'80px'}}/>

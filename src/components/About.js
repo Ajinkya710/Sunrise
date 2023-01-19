@@ -23,27 +23,27 @@ const About = () => {
       <img src={aboutimg} alt="aboutimg" />
       <h3>About SUNRISE?</h3>
       <div className="about-info">
-      <ul>
+        <ul>
           <li>To provide an opportunity to monitor the new <a href="https://apps.who.int/iris/handle/10665/311664" target='_blank' rel="noopener noreferrer">World Health Organization Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age.</a></li>
           <li>To examine how physical activity (PA), sedentary behaviour (SB), and sleep are associated with child health and development and to examine potential correlates of PA, SB, and sleep.</li>
           <li>To provide an opportunity for capacity building, especially in low- and middle-income countries and build an international community of researchers interested in early childhood movement behaviours.</li>
-      </ul>
-      <iframe id='aboutsunrise'
+        </ul>
+        <iframe id='aboutsunrise'
           src="https://www.youtube.com/embed/KW9GRQJsw_s"
           frameborder="0"
           allow="autoplay; encrypted-media"
-          allowfullscreen
+          allowFullScreen
           title="The SUNRISE Study"
         />{" "}
         <div className="about-content">
           <h3><strong>Primary Research Questions:</strong></h3>
           <ol>
             <li>What proportion of 4-year-old children sampled in participating countries meet the WHO Global 24-hour movement guidelines for the early years?
-            <ol>
-              <li>How does this proportion vary by sex?</li>
-              <li>How does this proportion vary by urban/rural location?</li>
-              <li>How does this proportion vary by SES (high/low)?</li>
-            </ol>
+              <ol>
+                <li>How does this proportion vary by sex?</li>
+                <li>How does this proportion vary by urban/rural location?</li>
+                <li>How does this proportion vary by SES (high/low)?</li>
+              </ol>
             </li>
             <li>Do these relationships vary between different country levels of human and economic development?</li>
           </ol>
@@ -57,119 +57,152 @@ const About = () => {
           <h3 id='execgroup'><strong>Executive</strong></h3>
           <ul id='exg'>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={tonyimage} />
-              <CCardBody><br/>
-                <CCardText>
-                  <strong>Tony Okely</strong> <br/>(Australia)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={tonyimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Tony Okely</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Australia)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={johnimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>John Reilly</strong> <br/>(Scotland)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={johnimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>John Reilly</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Scotland)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={markimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong> Mark Tremblay</strong> <br/>(Canada)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={markimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong> Mark Tremblay</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Canada)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
           </ul>
           <h3 id='execgroup'><strong>Leadership Group</strong></h3>
           <ul id='lsg'>
-          <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={catherineimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Catherine Draper</strong> <br/>(South Africa)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+            <li>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={catherineimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Catherine Draper</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (South Africa)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={bangimage} />
-              <CCardBody>
-                <CCardText>
-                <strong>Bang Nguyen Pham</strong> <br/>(Papua New Guinea)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={bangimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }} >
+                    <strong>Bang Nguyen Pham</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Papua New Guinea)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={aleximage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Alex Florindo</strong> <br/>(Brazil)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={aleximage} />
+                <CCardBody><br />
+                  <CCardText>
+                    <strong>Alex Florindo</strong>
+                  </CCardText>
+                  <CCardText>
+                    (Brazil)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={guanimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Guan Hongyan</strong> <br/>(China)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={guanimage} />
+                <CCardBody><br />
+                  <CCardText>
+                    <strong>Guan Hongyan</strong>
+                  </CCardText>
+                  <CCardText>
+                    (China)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
-          </ul>
-          <ul>
-          <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={peterimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Peter Katzmarzyk</strong> <br/>(USA)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+          {/* </ul>
+          <ul> */}
+            <li>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={peterimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Peter Katzmarzyk</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (USA)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={thomasimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Thomas Suesse</strong> <br/>(Australia)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={thomasimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Thomas Suesse</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Australia)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={asmaaimage} />
-              <CCardBody>
-                <CCardText>
-                <strong>Asmaa El Hamdouchi</strong> <br/>(Morocco)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={asmaaimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Asmaa El Hamdouchi</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (Morocco)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
             <li>
-            <CCard style={{ width: '200px' }}>
-              <CCardImage orientation="top" src={himangiimage} />
-              <CCardBody><br/>
-                <CCardText>
-                <strong>Himangi Lubree</strong> <br/>(India)
-                </CCardText>
-              </CCardBody>
-            </CCard>
+              <CCard style={{ width: '180px' }}>
+                <CCardImage style={{ objectFit: 'cover' }} orientation="top" src={himangiimage} />
+                <CCardBody><br />
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    <strong>Himangi Lubree</strong>
+                  </CCardText>
+                  <CCardText style={{ fontSize: '16px', marginLeft: '5px', marginRight: '5px' }}>
+                    (India)
+                  </CCardText>
+                </CCardBody>
+              </CCard>
             </li>
           </ul>
           <div className='aboutfooter'>
@@ -179,14 +212,14 @@ const About = () => {
               <p>Fiona Bull (WHO Representative, Geneva)</p>
               <p>Deepika Sharma (UNICEF, New York)</p>
             </div>
-          <div >
-            <p id='check'>Check Out --&gt;</p>
-            <div className='chieflink'>
-              <Link to="/chiefinvestigators" target='_blank' style={{color:'white', textDecoration: 'none'}}>
-                List of all the Chief Investigators
-              </Link>
+            <div >
+              <p id='check' >Check Out --&gt;</p>
+              <div className='chieflink'>
+                <Link to="/chiefinvestigators" target='_blank' style={{ color: 'white', textDecoration: 'none' }}>
+                  List of all the Chief Investigators
+                </Link>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>

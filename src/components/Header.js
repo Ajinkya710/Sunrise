@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { FaAlignRight } from "react-icons/fa";
 import logo from "../images/sunrise-logo.png";
 import '../App.css'
 import Button from '@mui/material/Button';
-import Modal from "react-responsive-modal";
 
 export default class Navbar extends Component {
     // state = {
@@ -13,7 +11,6 @@ export default class Navbar extends Component {
     // handleToggle = () => {
     //   this.setState({ isOpen: !this.state.isOpen });
     // };
-
   render() {
     return (
       <>
@@ -21,7 +18,7 @@ export default class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link smooth to="#home">
-            <img src={logo} height="100px" width="300px" alt="Sunrise" />
+            <img src={logo} style={{paddingTop:'2%'}} height="95px" width="260px" alt="Sunrise" />
             </Link>
             {/* <button
               type="button"
@@ -51,7 +48,7 @@ export default class Navbar extends Component {
             </li>
           </ul>
           <div id="loginbutton">
-          <Link to={'/login'} target='_blank' style={{textDecoration:'none'}}><Button variant="contained" className="loginicon" color="success">
+          <Link to={'/login'} target='_blank' style={{textDecoration:'none', top:'50%'}}><Button variant="contained" className="loginicon" color="success">
               Log In
           </Button></Link>
           {/* <button className="btn btn-primary-outline" id="login" onClick={this.onOpenModalLogin}>Login</button> */}

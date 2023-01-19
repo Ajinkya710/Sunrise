@@ -8,24 +8,38 @@
   --darkShadow: 5px 10px 8px 2px rgba(0, 0, 0, 0.5);
 }
 
-#logo {
+.getinvolvedheadernav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
   position: absolute;
   top: 1%;
   left: 3%;
   z-index: 3;
+  width: 95%;
 }
+/* #logo {
+  position: absolute;
+  top: 1%;
+  left: 3%;
+  z-index: 3;
+  height: 80px;
+  width: 330px;
+} */
 
 .getinvolved a {
   color: #f38981;
   text-decoration: none;
 }
-.getinvolved h1 {
+/* .getinvolved h1 {
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 45%;
-  font-size: 50px;
+  font-size: 45px;
   color: #fff;
-}
+  font-family: var(--main-font);
+} */
 
 .getinvolved h2{
   color: #f38981;
@@ -69,7 +83,7 @@
 .method {
   display: flex;
   text-align:justify;
-  align-items: center;
+  /* align-items: center; */
   margin: 50px 325px 25px 325px;
   gap: 80px;
 }
@@ -93,7 +107,7 @@
 .training {
   display: flex;
   text-align:justify;
-  align-items: center;
+  /* align-items: center; */
   margin: 50px 325px 25px 325px;
   gap: 80px;
 }
@@ -149,18 +163,13 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #logo {
-    position: absolute;
+  .getinvolvedheadernav {
     top: 0.2%;
     left: 3%;
-    z-index: 3;
   }
-  .getinvolved h1 {
-    position: absolute;
-    top: 2.5%;
-    left: 45%;
-    font-size: 70%;
-    color: #fff;
+  #logo {
+    height: 80px;
+    width: 330px;
   }
   .info{
     margin: 7%;
